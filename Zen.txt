@@ -19,3 +19,18 @@ Zen of Python!!!
 17. If the implementation is hard to explain, it's a bad idea.
 18. If the implementation is easy to explain, it may be a good idea.
 19. Namespaces are one honking great idea -- let's do more of those!
+20.
+21.
+22.
+23.
+24.
+25.
+26.
+27.
+28.
+29.
+30.
+31.
+32.
+33.
+34..Now is better than never.
