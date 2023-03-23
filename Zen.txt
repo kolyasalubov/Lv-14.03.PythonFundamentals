@@ -29,7 +29,7 @@ Zen of Python!!!
 27.
 28. Although practicality beats purity.
 29. Errors should never pass silently.
-30.
+30. Unless explicitly silenced.
 31.
 32.
 33.Although that way may not be obvious at first unless you're Dutch.
