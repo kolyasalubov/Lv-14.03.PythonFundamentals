@@ -1,6 +1,5 @@
-file = open("Zen.txt", "r")
-line = file.readline()
-string = """Zen of Python!!!
+Zen of Python!!!
+
 1. 
 2. Explicit is better than implicit.
 3. Simple is better than complex.
@@ -39,13 +38,4 @@ string = """Zen of Python!!!
 36. If the implementation is hard to explain, it's a bad idea.
 37. If the implementation is easy to explain, it may be a good idea.
 38. Namespaces are one honking great idea -- let's do more of those!Beautiful is better than ugly.
-39.Explicit is better than implicit."""
-better = line.count("better")
-never = string.count("never")
-is1 = string.count("is")
-print(f"Occurence in better - {better}, never - {never}, is - {is1}")
-
-print(string.upper())
-
-print(string.replace("i", "&"))
-
+39.Explicit is better than implicit.
