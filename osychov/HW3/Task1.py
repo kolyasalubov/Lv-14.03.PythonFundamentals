@@ -1,7 +1,3 @@
-file = open("Zen.txt", "r")
-lines = file.readlines()
-for line in lines:
-    print(line.strip())
 string = """Zen of Python!!!
 1. 
 2. Explicit is better than implicit.
@@ -42,7 +38,7 @@ string = """Zen of Python!!!
 37. If the implementation is easy to explain, it may be a good idea.
 38. Namespaces are one honking great idea -- let's do more of those!Beautiful is better than ugly.
 39.Explicit is better than implicit."""
-better = lines.count("better")
+better = string.count("better")
 never = string.count("never")
 is1 = string.count("is")
 print(f"Occurence in better - {better}, never - {never}, is - {is1}")
