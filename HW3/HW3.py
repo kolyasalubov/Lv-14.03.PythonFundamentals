@@ -64,8 +64,8 @@ replaced_string = line.replace("i", "&")
 # 2.1
 
 number = 4865
-sum = 4 + 8 + 6 + 5
-print(sum)
+product = 4 * 8 * 6 * 5
+print(product)
 
 # 2.2
 
