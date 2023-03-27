@@ -1,0 +1,10 @@
+a = int(input('Write "a" number:'))
+b = int(input('Write "b" number:'))
+
+print('A + B =', a + b)
+print('A - B =', a - b)
+print('A * B =', a * b)
+print('A / B =', a / b)
+print('A ** B =', a ** b)
+print('A // B =', a // b)
+print('A % B =', a % b)
