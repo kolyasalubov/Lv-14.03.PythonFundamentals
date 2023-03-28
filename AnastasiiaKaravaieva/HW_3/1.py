@@ -20,7 +20,7 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!'''
 
 
-# 1
+#  1
 find_the_better = zen_of_python.count('better')
 print(f"\n{find_the_better}")
 
@@ -30,10 +30,10 @@ print(f"\n{find_the_never}")
 find_the_is = zen_of_python.count('is')
 print(f"\n{find_the_is}")
 
-# 2
+#  2
 print(zen_of_python.upper())
 
-# 3
+#  3
 replaced = zen_of_python.replace('i', '&')
 print(f"\n{replaced}")
 

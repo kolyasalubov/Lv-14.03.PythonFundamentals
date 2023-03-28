@@ -1,4 +1,5 @@
 
+
 n = input("Write a four-digit natural number:")
 
 mult = 1

@@ -1,5 +1,5 @@
 
-# # ex.1
+
 name = input("What is your name?")
 age = int(input("How old are you?"))
 living_place = input("Where do you live?")
