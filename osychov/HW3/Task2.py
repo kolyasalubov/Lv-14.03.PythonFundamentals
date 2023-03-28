@@ -1,9 +1,9 @@
 string = "1256"
 number = list(string)
 print(f"Product first and second number - {int(number[0])*int(number[1])}")
-
 print(string[::-1])
-
+sort_number = ''.join(sorted(string))
+print("Ascending order of digits in the number:", sort_number)
 # number = int(input("Enter your number: "))
 
 # one_div, remainder = divmod(number, 1000)
