@@ -64,8 +64,13 @@ replaced_string = line.replace("i", "&")
 # 2.1
 
 number = 4865
+<<<<<<< HEAD
 product = 4 * 8 * 6 * 5
 print(product)
+=======
+sum = 4 + 8 + 6 + 5
+print(sum)
+>>>>>>> 9f5c740 (done  all homework 3)
 
 # 2.2
 
