@@ -1,5 +1,5 @@
 """
-*** Practical task 0 ***
+*** Practical task 3 ***
 Write a script that will calculate the factorial
 of the entered number without using recursion.
 """
