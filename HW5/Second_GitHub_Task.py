@@ -1,3 +1,5 @@
+# Making fibonacci from user's number
+
 number1 = 1
 number2 = 0
 sequence = [0]
