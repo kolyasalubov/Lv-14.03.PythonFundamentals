@@ -37,7 +37,7 @@ for i in range(n):
         break
 print(li1[:-1])
 
-# 3 TASK---------------------------------------------
+# 3 TASK------------------------------------------ori---
 
 factorial = int(input("enter your factorial: "))
 list = [0, 1]
@@ -50,3 +50,12 @@ if factorial >= 0:
     print(f"your result is {list[-1]}")
 else:
     print("error, your number {} cannot be used".format(factorial))
+
+# factorial = int(input("enter your factorial: "))
+#
+# i = 0
+# while i < factorial:
+#     i += 1
+#     result = factorial * (factorial - 1)
+#     count = result * i
+#     print(count)
