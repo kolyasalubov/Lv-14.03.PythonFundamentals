@@ -52,13 +52,17 @@ print(li1[:-1])
 #     print("error, your number {} cannot be used".format(factorial))
 
 factorial = int(input("enter your factorial: "))
-#
+
 result = 0
 i = 0
 count = 1
-while i < factorial:
-    result = (factorial - i) * count
-    i += 1
-    count = result
-
-print(result)
+if factorial > 0:
+    while i < factorial:
+        result = (factorial - i) * count
+        i += 1
+        count = result
+    print(result)
+elif factorial == 0:
+    print("1")
+else:
+    print("error")
