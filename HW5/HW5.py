@@ -38,24 +38,27 @@ for i in range(n):
 print(li1[:-1])
 
 # 3 TASK------------------------------------------ori---
+#
+# factorial = int(input("enter your factorial: "))
+# list = [0, 1]
+#
+# if factorial >= 0:
+#     for i in range(factorial):
+#         fact = list[-1] * (i+1)
+#         # print(fact)
+#         list.append(fact)
+#     print(f"your result is {list[-1]}")
+# else:
+#     print("error, your number {} cannot be used".format(factorial))
 
 factorial = int(input("enter your factorial: "))
-list = [0, 1]
-
-if factorial >= 0:
-    for i in range(factorial):
-        fact = list[-1] * (i+1)
-        # print(fact)
-        list.append(fact)
-    print(f"your result is {list[-1]}")
-else:
-    print("error, your number {} cannot be used".format(factorial))
-
-# factorial = int(input("enter your factorial: "))
 #
-# i = 0
-# while i < factorial:
-#     i += 1
-#     result = factorial * (factorial - 1)
-#     count = result * i
-#     print(count)
+result = 0
+i = 0
+count = 1
+while i < factorial:
+    result = (factorial - i) * count
+    i += 1
+    count = result
+
+print(result)
