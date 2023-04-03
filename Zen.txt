@@ -12,7 +12,7 @@ Zen of Python!!!
 10. Errors should never pass silently.
 11. Unless explicitly silenced.
 12. In the face of ambiguity, refuse the temptation to guess.
-13.
+13. There should be one-- and preferably only one --obvious way to do it.
 14. Although that way may not be obvious at first unless you're Dutch.
 15. Now is better than never.
 16. Although never is often better than *right* now.
@@ -30,10 +30,10 @@ Zen of Python!!!
 28. Although practicality beats purity.
 29. Errors should never pass silently.
 30. Unless explicitly silenced.
-31.
-32.
+31. In the face of ambiguity, refuse the temptation to guess.
+32. There should be one-- and preferably only one --obvious way to do it.
 33.Although that way may not be obvious at first unless you're Dutch.
-34.
+34. Now is better than never.
 35. Although never is often better than *right* now.
 36. If the implementation is hard to explain, it's a bad idea.
 37. If the implementation is easy to explain, it may be a good idea.
