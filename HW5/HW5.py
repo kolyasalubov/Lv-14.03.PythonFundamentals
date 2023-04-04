@@ -3,8 +3,10 @@
 li = [1, 2, 3, 4, 5]
 
 for i in li:
-    chan = float(i)
+    chan = float(li[i])
     print(chan, type(chan))
+
+print(type(li[1]))
 
 # 2 TASK---------------------------------------------
 
