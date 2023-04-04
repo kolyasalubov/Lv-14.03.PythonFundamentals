@@ -11,7 +11,7 @@ for number in range(1, 11):
     result = str(number) + ', '
     if not number % 2:
         num_dict['1'] += result
-    if not number % 3:
+    if not number % 3 and number % 2:
         num_dict['2'] += result
     if number % 2 and number % 3:
         num_dict['3'] += result
