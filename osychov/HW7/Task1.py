@@ -1,5 +1,6 @@
 def what_number_is_larger(a,b):
-    """_In this function we determine which input two numbers is larger_
+    """
+    _In this function we determine which input two numbers is larger_
 
     Args:
         a (_int_): _first number_

@@ -19,4 +19,4 @@ def count_symbols_in_row(word):
             result.update({str(item): word.count(item)})
     return result
 
-print(count_symbols_in_row("cummxxxxx"))
+print(count_symbols_in_row("abrakadabra"))
