@@ -16,7 +16,7 @@ while list:
     index = 0
 
 
-print(list)
+print("Our head list after operations : {list}")
 print(even_two)
 print(odd_three)
 print(not_div_two_three)

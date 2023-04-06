@@ -6,6 +6,7 @@ login = input("Welcome to our site!\n"
 while True:
     if login == "First":
         print(f"Hello, {login}! Glad to see you again!")
+        database.append(login)
         break 
     else:
         print("Error! No user found with this username!\n")
