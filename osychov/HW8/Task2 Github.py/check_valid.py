@@ -2,8 +2,8 @@ import data
 
 def check_valid_password(inp):
     if len(inp) in range(6, 17):
-        for i in inp:
-            if i in data.digits:
+        for i in data.digits:
+            if i in inp:
                 break
         else:
             print("You should have a number in your password!")
