@@ -1,4 +1,5 @@
 import Functions
+
 a = float(input("First number: "))
 b = float(input("Second number: "))
 def main(a, b):
