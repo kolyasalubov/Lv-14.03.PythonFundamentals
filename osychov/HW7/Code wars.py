@@ -103,3 +103,6 @@
 
 # def correct_tail(body, tail):
 #     return body[-1] == tail
+
+# def filter_words(st):
+#     return " ".join(st.split()).capitalize() 
