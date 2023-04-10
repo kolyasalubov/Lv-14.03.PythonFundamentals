@@ -1,8 +1,5 @@
-print("What is your name?")
-a = str(input("Hello, "))
+name = input("What is your name?")
+age = int(input("How old are you?"))
+city = input("Where do you live?")
+print(f"Hello, {name}.\nYour age is {age} years old.\nYou live in {city}.")
 
-print("How old are you?")
-a = int(input("Your age is "))
-
-print("Where do you live?")
-a = str(input("You live in "))
