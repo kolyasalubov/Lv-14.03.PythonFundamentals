@@ -12,7 +12,7 @@ def rectangle_area(a, b):
 
 
 def circle_area(r):
-    s = r*r*math.pi
+    s = r**2*math.pi
     return round(s, 2)
 
 
