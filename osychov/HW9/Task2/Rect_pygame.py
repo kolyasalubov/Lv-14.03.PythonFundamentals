@@ -31,17 +31,29 @@ while run:
     for event in pygame.event.get(): 
         if event.type == pygame.QUIT:
             run = False
-
+        if event.type == pygame.QUIT:  #check programs possibilities
+            print("User asked to quit.")
+        elif event.type == pygame.KEYDOWN:
+            print("User pressed a key.")
+        elif event.type == pygame.KEYUP:
+            print("User let go of a key.")
+        elif event.type == pygame.MOUSEBUTTONDOWN:
+            print("User pressed a mouse button")
     keys = pygame.key.get_pressed()
     
     if keys[pygame.K_LEFT]:
-        COORD_X = COORD_X-DELTA_STEP
+        if 0<=COORD_X:   #Added solve
+            COORD_X = COORD_X-DELTA_STEP
     if keys[pygame.K_RIGHT]:
-        COORD_X = COORD_X+DELTA_STEP
+        if COORD_X<=500:
+            COORD_X = COORD_X+DELTA_STEP
     if keys[pygame.K_UP]:
-        COORD_Y = COORD_Y-DELTA_STEP
+        if 0<=COORD_Y:
+            COORD_Y = COORD_Y-DELTA_STEP
     if keys[pygame.K_DOWN]:
-        COORD_Y = COORD_Y+DELTA_STEP
+        if COORD_Y<= 500:
+            COORD_Y = COORD_Y+DELTA_STEP
+    
 
 
     gameDisplay.fill(BLACK_COLOR) 
