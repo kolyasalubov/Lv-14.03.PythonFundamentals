@@ -71,6 +71,14 @@ sum = 4 + 8 + 6 + 5
 print(sum)
 
 
+product = 4 * 8 * 6 * 5
+print(product)
+
+sum = 4 + 8 + 6 + 5
+print(sum)
+
+
+
 # 2.2
 
 str_number = str(number)
@@ -91,4 +99,9 @@ print(list_number)
 a = 235
 b = 4240
 
+
 print( str(a).replace(str(a), str(b)), str(b).replace(str(b), str(a)))
+
+
+print( str(a).replace(str(a), str(b)), str(b).replace(str(b), str(a)))
+
