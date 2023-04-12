@@ -1,3 +1,4 @@
+Zen of Python!!!
 
 1. 
 2. Explicit is better than implicit.
@@ -5,7 +6,7 @@
 4. Complex is better than complicated.
 5. Flat is better than nested.
 6. Sparse is better than dense.
-7. Readability counts.
+7.
 8. Special cases aren't special enough to break the rules.
 9.  Although practicality beats purity.
 10. Errors should never pass silently.
@@ -21,10 +22,10 @@
 20.
 21. Explicit is better than implicit.
 22. Simple is better than complex.
-23. Complex is better than complicated.
+23.Complex is better than complicated.
 24. Flat is better than nested.
 25. Sparse is better than dense.
-26. Readability counts.
+26.
 27. Special cases aren't special enough to break the rules.
 28. Although practicality beats purity.
 29. Errors should never pass silently.
