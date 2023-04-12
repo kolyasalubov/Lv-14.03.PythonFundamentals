@@ -18,6 +18,10 @@ Stanislav_Hryhorskiy/HW8/**/__pycache__
 .idea/**/dictionaries
 .idea/**/shelf
 
+__pycache__/
+*.py[cod]
+
+
 # AWS User-specific
 .idea/**/aws.xml
 
