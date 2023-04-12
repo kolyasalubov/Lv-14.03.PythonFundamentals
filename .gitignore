@@ -5,12 +5,22 @@
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
+# My file
+Stanislav_Hryhorskiy/for_code_runner.py
+.idea/
+Stanislav_Hryhorskiy/time_to_practice/
+Stanislav_Hryhorskiy/HW8/**/__pycache__
+
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+
+__pycache__/
+*.py[cod]
+
 
 # AWS User-specific
 .idea/**/aws.xml
@@ -158,5 +168,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+__pycache__/
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,pycharm,visualstudiocode
