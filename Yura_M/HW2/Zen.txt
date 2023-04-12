@@ -1,4 +1,4 @@
-git Zen of Python!!!
+Zen of Python!!!
 
 1. 
 2. Explicit is better than implicit.
@@ -6,7 +6,7 @@ git Zen of Python!!!
 4. Complex is better than complicated.
 5. Flat is better than nested.
 6. Sparse is better than dense.
-7. Readability counts.
+7.
 8. Special cases aren't special enough to break the rules.
 9.  Although practicality beats purity.
 10. Errors should never pass silently.
@@ -25,7 +25,7 @@ git Zen of Python!!!
 23.Complex is better than complicated.
 24. Flat is better than nested.
 25. Sparse is better than dense.
-26. Readability counts.
+26.
 27. Special cases aren't special enough to break the rules.
 28. Although practicality beats purity.
 29. Errors should never pass silently.
@@ -36,12 +36,6 @@ git Zen of Python!!!
 34. Now is better than never.
 35. Although never is often better than *right* now.
 36. If the implementation is hard to explain, it's a bad idea.
-<<<<<<< HEAD:HW2/Zen.txt
-37.
-38.
-39.Explicit is better than implicit.
-=======
 37. If the implementation is easy to explain, it may be a good idea.
 38. Namespaces are one honking great idea -- let's do more of those!Beautiful is better than ugly.
 39.Explicit is better than implicit.
->>>>>>> aa7cfaa85ac9649a6a61307501fb0970020fb8b3:Zen.txt
