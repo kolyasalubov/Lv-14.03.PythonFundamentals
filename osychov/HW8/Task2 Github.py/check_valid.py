@@ -56,7 +56,7 @@ def check_valid_with_re(inp):
     else:
         print("Your password's length shoud be from 6 to 16!")
         exit()
-def check_implementation(inp):
+def check_implementation(password):
     if len(password) < 6 or len(password) > 16:
         return False
 

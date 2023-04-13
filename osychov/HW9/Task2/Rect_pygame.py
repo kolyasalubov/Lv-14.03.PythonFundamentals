@@ -41,11 +41,10 @@ while run:
             print("User pressed a mouse button")
     keys = pygame.key.get_pressed()
     
-    if keys[pygame.K_LEFT]:
-        if 0<=COORD_X:   #Added solve
+    if keys[pygame.K_LEFT] and DELTA_STEP < COORD_X:  #Added solve
             COORD_X = COORD_X-DELTA_STEP
     if keys[pygame.K_RIGHT]:
-        if COORD_X<=500:
+        if COORD_X <= 500 - WIDTH_RECTANGLE - DELTA_STEP:
             COORD_X = COORD_X+DELTA_STEP
     if keys[pygame.K_UP]:
         if 0<=COORD_Y:
