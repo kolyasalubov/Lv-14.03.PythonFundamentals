@@ -5,7 +5,7 @@ FPS = 60
 WIDTH_DISPLAY=500
 HEIGHT_DISPLAY=500
 
-COORD_X=50
+COORD_X=450
 COORD_Y=50
 WIDTH_RECTANGLE=40
 HEIGHT_RECTANGLE=60
@@ -44,13 +44,11 @@ while run:
     if keys[pygame.K_LEFT] and DELTA_STEP < COORD_X:  #Added solve
             COORD_X = COORD_X-DELTA_STEP
     if keys[pygame.K_RIGHT]:
-        if COORD_X <= 500 - WIDTH_RECTANGLE - DELTA_STEP:
+        if COORD_X <= WIDTH_DISPLAY - WIDTH_RECTANGLE - DELTA_STEP:
             COORD_X = COORD_X+DELTA_STEP
-    if keys[pygame.K_UP]:
-        if 0<=COORD_Y:
+    if keys[pygame.K_UP] and DELTA_STEP <= COORD_Y:
             COORD_Y = COORD_Y-DELTA_STEP
-    if keys[pygame.K_DOWN]:
-        if COORD_Y<= 500:
+    if keys[pygame.K_DOWN] and COORD_Y  <= HEIGHT_DISPLAY - HEIGHT_RECTANGLE - DELTA_STEP:
             COORD_Y = COORD_Y+DELTA_STEP
     
 
