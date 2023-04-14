@@ -59,7 +59,6 @@ def check_valid_with_re(inp):
 def check_implementation(password):
     if len(password) < 6 or len(password) > 16:
         return False
-
     if not re.search(r'\d', password):    #decimal digit [0-9]
         return False
     if not re.search(r'[@#$]', password):
