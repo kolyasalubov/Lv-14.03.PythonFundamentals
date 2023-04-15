@@ -1,4 +1,4 @@
-from models.user import *
-from models.admin import *
+from .user import *
+from .admin import *
 
 __all__ = ['create_user', 'create_admin']
