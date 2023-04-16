@@ -15,12 +15,12 @@ class Employee:
     def all_employees():
         for empl in employees:
             print(empl.get_information())
-employees = [Employee("Alex", 2000), Employee("Oleg", 3000),Employee("Igor", 4000)]   
 
+employees = [Employee("Alex", 2000), Employee("Oleg", 3000),Employee("Igor", 4000)]   
 
 def main():
     print(Employee.num_of_employ()) #number of employees
-    Employee.all_employees()
+    Employee.all_employees()                
     print(Employee.__base__)
     print(Employee.__dict__)
     print(Employee.__name__)
