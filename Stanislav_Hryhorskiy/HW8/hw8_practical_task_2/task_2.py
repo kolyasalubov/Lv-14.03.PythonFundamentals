@@ -9,6 +9,8 @@
 
 import re
 
+MIN_LENGTH, MAX_LENGTH = 6, 16
+
 pattern = [re.compile(r"[a-z]+"),
            re.compile(r"[A-Z]+"),
            re.compile(r"\d+"),
@@ -20,8 +22,8 @@ comment = ["Password must contain at least 1 letter between [a-z]!",
            "Password must contain at least 1 letter between [A-Z]!",
            "Password must contain at least 1 number between [0-9]!",
            "Password must contain at least 1 character from [$#@]!",
-           f"The minimum password length is 6 characters!",
-           f"The maximum password length is 16 characters!"]
+           f"The minimum password length is {MIN_LENGTH} characters!",
+           f"The maximum password length is {MAX_LENGTH} characters!"]
 
 while True:
     password = input("Enter your password: ")
@@ -32,4 +34,3 @@ while True:
     else:
         print("Congratulations! Your password has been validated.")
         break
-
