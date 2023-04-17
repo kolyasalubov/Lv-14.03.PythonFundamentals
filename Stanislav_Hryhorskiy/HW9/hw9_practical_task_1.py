@@ -22,8 +22,8 @@ print('The computer has already generated a number! '
 
 attempt, user_number = 1, None
 while attempt <= MAX_ATTEMPT:
-    print(f'\nAttempt number {attempt}.', end=' ')
-    user_number = input(f'Enter your number from range [{MIN_NUMBER}; {MAX_NUMBER}]:\n')
+    print(f'\nAttempt №{attempt}.', end=' ')
+    user_number = input(f'Enter your number from range [{MIN_NUMBER}; {MAX_NUMBER}]: ')
 
     if user_number.isdigit():
         user_number = int(user_number)
