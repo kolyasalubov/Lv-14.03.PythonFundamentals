@@ -61,7 +61,7 @@ Namespaces are one honking great idea -- let's do more of those! """
 a = Zen.count("better")
 b = Zen.count("never")
 c = Zen.count("is")
-print(a,b,c)
+print('стількі разів в тексті написано слово better - ', a)
 
 d = Zen.upper()
 print(d)
