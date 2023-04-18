@@ -17,3 +17,25 @@ def main(a, b):
         print("Enter number from 1 to 4: ")
         main(a, b)
 main(a, b)
+
+
+
+def main2(): 
+    a = float(input("First number: ")) 
+    b = float(input("Second number: ")) 
+    choice = int(input("What action you want to do: \n1) Addition \n2) Subtraction \n3) Multiplication \n4) Division \n"))
+
+    # Use dictionary to map user's choice to function
+    options = {
+        1: Functions.addition,
+        2: Functions.substraction,
+        3: Functions.multiplication,
+        4: Functions.division
+    }
+
+    if choice in range(1, 5):
+        print(options[choice](a, b))
+    else:
+        print("Enter a number from 1 to 4.")
+        main2()
+
