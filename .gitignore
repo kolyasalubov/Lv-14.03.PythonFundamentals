@@ -19,6 +19,10 @@ Stanislav_Hryhorskiy/HW9/config_task_2.py
 .idea/**/dictionaries
 .idea/**/shelf
 
+__pycache__/
+*.py[cod]
+
+
 # AWS User-specific
 .idea/**/aws.xml
 
@@ -165,5 +169,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+__pycache__/
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,pycharm,visualstudiocode
