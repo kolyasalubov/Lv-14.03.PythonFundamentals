@@ -160,5 +160,5 @@ $RECYCLE.BIN/
 *.lnk
 
 .__pycache__
-C:\Users\Alex Sychov\Desktop\My Python\Python Fundamentals\Lv-14.03.PythonFundamentals\osychov\Project\config_OWM.py
+.config_OWM.py
 # End of https://www.toptal.com/developers/gitignore/api/windows,pycharm,visualstudiocode
