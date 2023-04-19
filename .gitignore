@@ -159,6 +159,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-.__pycache__
-.config_OWM.py
+./osychov/Project/__pycache__
+./osychov/Project/config_OWM.py
 # End of https://www.toptal.com/developers/gitignore/api/windows,pycharm,visualstudiocode
