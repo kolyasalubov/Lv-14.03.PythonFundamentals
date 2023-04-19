@@ -13,6 +13,7 @@ dp = Dispatcher(bot)
 async def start_command(messege: types.Message):
     await messege.reply("Привіт! Ти можеш написати своє місто і я тобі пришлю оновлену погоду)")
 
+
 @dp.message_handler() 
 async def get_weather(messege: types.Message):
 
