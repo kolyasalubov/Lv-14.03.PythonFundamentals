@@ -12,7 +12,6 @@ def triangle(h, s):
 
 def circle(r, PI):
     return PI * r ** 2
-    pass
 
 
 if figure == 1:
