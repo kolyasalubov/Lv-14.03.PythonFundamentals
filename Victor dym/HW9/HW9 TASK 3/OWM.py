@@ -1,6 +1,5 @@
 from pyowm import OWM
 import tkinter as tk
-from tkinter import font
 
 
 API_KEY = 'ef2206ff5da67de63306d0b143e20872'
