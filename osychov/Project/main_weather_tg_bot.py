@@ -5,9 +5,12 @@ from aiogram import Bot, types
 from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
 
+async def on_start(_):
+    print("Bot started!")
 
 bot = Bot(token= tg_bot_token)
 dp = Dispatcher(bot)
+
 
 @dp.message_handler(commands=["start"])        
 async def start_command(messege: types.Message):
@@ -33,7 +36,7 @@ async def get_weather(messege: types.Message):
         data = r.json()
         #pprint(data)
         city = data["name"]
-        
+
         weather_description = data["weather"][0]["main"]
         if weather_description in code_to_smiles:  #Перевіряємо, чи є значення в ключах dict
             wd = code_to_smiles[weather_description]
@@ -58,10 +61,10 @@ async def get_weather(messege: types.Message):
             f"Захід сонця: {sunset_timestamp}\n"
             f"Довжина дня: {length_of_the_day}\n"
             f"Гарного дня!")
-        
-        
+
+
     except :
         await messege.reply("Перевірте назву вашого міста: ")
 
 if __name__ == '__main__':
-    executor.start_polling(dp)
+    executor.start_polling(dp, on_startup=on_start)
