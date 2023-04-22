@@ -159,6 +159,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-./osychov/Project/Telegram Bot/__pycache__
-./osychov/Project/Telegram Bot/config_OWM.py
+./osychov/Project/Telegram_Bot/__pycache__
+./osychov/Project/Telegram_Bot/config_OWM.py
 # End of https://www.toptal.com/developers/gitignore/api/windows,pycharm,visualstudiocodec
