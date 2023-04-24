@@ -19,7 +19,6 @@ class City(db.Model):
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    
     if request.method == 'POST':
         new_city = request.form.get('city')
         
