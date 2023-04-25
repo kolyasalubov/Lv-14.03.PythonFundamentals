@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>What's the weather like?</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
 </head>
 
 <body>
@@ -34,17 +34,17 @@
                                 </button>
                             </div>
                         </div>
-                        {% with messages = get_flashed_messages(with_categories=true)%}
+                        {% with messages = get_flashed_messages(with_categories=true) %}
                         {% if messages %}
                             {% for category, message in messages %}
-                                {% set messages_class = 'is-success' %}
+                                {% set message_class = 'is-success' %}
 
                                 {% if category == 'error' %}
-                                    {% set messages_class = 'is-danger' %}
+                                    {% set message_class = 'is-danger' %}
                                 {% endif %}
-                                    <div class="notification {{ message_class}}"> {{message}} </div>
+                                <div class="notification {{ message_class }}">{{ message }}</div>
                             {% endfor %}
-                        {% endif %} 
+                        {% endif %}
                         {% endwith %}
                     </form>
                 </div>
@@ -68,15 +68,15 @@
                                     <p>
                                         <span class="title">{{ weather.city }}</span>
                                         <br>
-                                        <span class="subtitle">{{ weather.temperature }}° C</span>
-                                        <br>
-                                        <span class="subtitle">Description: {{ weather.description }}</span>
-                                        <br> Feel like: {{ weather.feel_like }} ° C
-                                        <br> Wind: {{ weather.wind }} met/sec
-                                        <br> Humidity : {{weather.humidity}}
-                                        <br> Pressure: {{weather.pressure}} MB
+                                        <span class="subtitle">{{ weather.temperature }}° F</span>
+                                        <br> {{ weather.description }}
                                     </p>
                                 </div>
+                            </div>
+                            <div class="media-right">
+                                <a href="{{ url_for('delete_city', name=weather.city) }}">
+                                    <button class="delete"></button>
+                                </a>
                             </div>
                         </article>
                     </div>
