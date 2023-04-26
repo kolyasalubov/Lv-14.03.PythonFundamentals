@@ -14,7 +14,6 @@ async def on_start(_):
         _ : _Any arg just for work_
     """
     print("Bot started!")
-    asyncio.create_task(scheduler())
 
 bot = Bot(token= tg_bot_token)
 dp = Dispatcher(bot)
@@ -38,7 +37,7 @@ async def get_weather(messege: types.Message):
     """
     if messege.text == "Підписка час":
         await messege.reply("Введи час в який ти хочеш отримувати прогноз погоди:")
-        time = await bot.await_answer()
+
         
     else:
         """unicode emojis for program depends on weather

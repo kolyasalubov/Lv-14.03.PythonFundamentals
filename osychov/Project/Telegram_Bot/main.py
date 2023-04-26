@@ -4,7 +4,7 @@ import requests
 import datetime
 
 def get_weather(city, API_KEY):
-    """_summary_
+    """Function only to check the work capacity of openweathermap API
     """
     code_to_smiles = {
         "Clear" : "Ясно \U0001F31E",
@@ -55,7 +55,7 @@ def get_weather(city, API_KEY):
     
     
 def main():
-    """_summary_
+    """func for starting and working the program
     """
     city = input("Введіть назву міста:) ")
     get_weather(city, API_KEY)
