@@ -1,7 +1,9 @@
+from config_OWM import API_KEY
 import os
 import requests
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_sqlalchemy import SQLAlchemy 
+from config_OWM import API_KEY
 
 
 app = Flask(__name__)
@@ -18,7 +20,7 @@ class City(db.Model):
     name = db.Column(db.String(50), nullable=False)
 
 def get_weather_data(city):
-    url = f'http://api.openweathermap.org/data/2.5/weather?q={ city }&units=imperial&appid=271d1234d3f497eed5b1d80a07b3fcd1'
+    url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
     r = requests.get(url).json()
     return r
 
@@ -38,6 +40,8 @@ def index_get():
             'temperature' : r['main']['temp'],
             'description' : r['weather'][0]['description'],
             'icon' : r['weather'][0]['icon'],
+            'feel_like': r["main"]["feels_like"],
+            'humidity' : r["main"]["humidity"],
         }
 
         weather_data.append(weather)

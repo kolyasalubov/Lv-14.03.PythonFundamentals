@@ -8,6 +8,11 @@ import markups as nav
 import time
 
 async def on_start(_):
+    """Function arises at the program start 
+
+    Args:
+        _ : _Any arg just for work_
+    """
     print("Bot started!")
     asyncio.create_task(scheduler())
 
@@ -15,18 +20,29 @@ bot = Bot(token= tg_bot_token)
 dp = Dispatcher(bot)
 
 
-@dp.message_handler(commands=["start"])        
+@dp.message_handler(commands=["start"])     
 async def start_command(messege: types.Message):
+    """message, that bot write after we entered command 'start'
+    async  = function in program
+    Await  = print
+    """
     await messege.reply("Привіт! Ти можеш написати своє місто і я тобі пришлю оновлену погоду)", reply_markup = nav.mainMenu)
     
         
 @dp.message_handler() 
 async def get_weather(messege: types.Message):
+    """program checks every word we typed in it and return a result depends on typing
+
+    Args:
+        messege (types.Message): represents a message
+    """
     if messege.text == "Підписка час":
         await messege.reply("Введи час в який ти хочеш отримувати прогноз погоди:")
         time = await bot.await_answer()
         
     else:
+        """unicode emojis for program depends on weather
+        """
         code_to_smiles = {
             "Clear" : "Ясно \U0001F31E",
             "Clouds" : "Хмарно \U00002601",
@@ -36,6 +52,8 @@ async def get_weather(messege: types.Message):
             "Snow": "Сніг \U00002744",
             "Mist": "Туман \U0001F32B"
         }
+        """function checks our input , if it's city , func return a weather result to that city, if not , ask again input
+        """
         try:
             r = requests.get(
                 f"https://api.openweathermap.org/data/2.5/weather?q={messege.text}&appid={API_KEY}&units=metric"
@@ -73,6 +91,7 @@ async def get_weather(messege: types.Message):
 
  
     
-
+"""generate start of bot 
+"""
 if __name__ == '__main__':
     executor.start_polling(dp, on_startup=on_start)
