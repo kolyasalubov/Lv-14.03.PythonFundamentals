@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} About site {% endblock %}</h1>
+    <p> This site was created for homework 13 to the theme of the flask </p>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary"><a href={{url_for('index')}}><span style="color:white;">Back to main menu</span></a></button>
+    </div>
+{% endblock %}
