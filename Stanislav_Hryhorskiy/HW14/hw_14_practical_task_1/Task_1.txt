@@ -1,0 +1,14 @@
+*** Task 1 ***
+You have two python modules functions.py and functions_with_errors.py
+with same functions greeting_by_name, get_symbol_position and
+merge but there are mistakes in the second file in these functions.
+Write unit tests in module and with unittest to cover all possible
+returns from all functions after that test both files.
+You can see example of test result for functions with mistakes:
+Test greeting by name (name) is Failed
+Test get_symbol_position(text, symbol) when symbol incorrect is Failed
+Test get_symbol_position(text, symbol) with success is Failed
+Test get_symbol_position(text, symbol) when symbol was not found is Failed
+Test merge(dict1, dict2) dict1 immutability is Failed
+Test merge(dict1, dict2) dict2 immutability is Passed
+Test merge(dict1, dict2) is Passed

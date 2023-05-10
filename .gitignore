@@ -6,11 +6,12 @@
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # My file
-Stanislav_Hryhorskiy/for_code_runner.py
-.idea/
+**/.idea
+**/__pycache__
 Stanislav_Hryhorskiy/time_to_practice/
-Stanislav_Hryhorskiy/HW8/**/__pycache__
 Stanislav_Hryhorskiy/HW9/config_task_2.py
+Stanislav_Hryhorskiy/for_code_runner.py
+
 
 # User-specific stuff
 .idea/**/workspace.xml
