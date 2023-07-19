@@ -7,3 +7,6 @@ try:
     print(lst)
 except:
     print("Enter number, not a string! ")
+
+
+    
