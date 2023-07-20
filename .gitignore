@@ -159,4 +159,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,pycharm,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/windows,pycharm,visualstudiocode.DS_Store
