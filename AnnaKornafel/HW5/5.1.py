@@ -1,12 +1,10 @@
-lst = []
+lst = [1, 2, 3, 4, 5]
 
-try:
-    num = int(input("Enter number of list items: "))
-    for i in range(1, num):
-        lst.append(float(input(f"Enter {i}th item: ")))
-    print(lst)
-except:
-    print("Enter number, not a string! ")
+f_lst = []
+for element in lst:
+    float_element = float(element)
+    f_lst.append(float_element)
 
+print("Integer numbers", lst)
+print("Float numbers", f_lst)
 
-    
