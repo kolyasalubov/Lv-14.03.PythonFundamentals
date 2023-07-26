@@ -20,5 +20,3 @@ try:
 except ValueError:
     print("Invalid input.")          
 
-
-# djd
