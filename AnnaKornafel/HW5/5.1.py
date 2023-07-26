@@ -7,4 +7,4 @@ for element in lst:
 
 print("Integer numbers", lst)
 print("Float numbers", f_lst)
-
+# gdude
